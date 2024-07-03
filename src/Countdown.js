@@ -39,6 +39,7 @@ const Countdown = () => {
 
           setTimeLeft({
 		  	years: duration.years(),
+			months: duration.months(),
             days: duration.days(),
             hours: duration.hours(),
             minutes: duration.minutes(),
@@ -62,9 +63,10 @@ const Countdown = () => {
   return (
     <div className="countdown">
       <h1>Bitcoin Halving Countdown</h1>
-	  <h2>Estimate Time</h2>
+	  <h3>Estimate Time</h3>
       <div className="time">
         <span>{timeLeft.years} Years</span>
+        <span>{timeLeft.months} Months</span>
 		<span>{timeLeft.days} Days</span>
         <span>{timeLeft.hours} Hours</span>
         <span>{timeLeft.minutes} Minutes</span>
